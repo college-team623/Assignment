@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Manage Assignments</title>
+    <link rel="stylesheet" href="professor.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <header>
+                <h1>📤 Manage Assignments</h1>
+                <p>Upload new assignments, edit deadlines, or remove assignments.</p>
+            </header>
+            <div class="content">
+                <div class="upload-section">
+                    <form id="uploadForm">
+                        <div class="form-group">
+                            <label for="assignmentFile">New Assignment File:</label>
+                            <input type="file" id="assignmentFile">
+                        </div>
+                        <div class="form-group">
+                            <label for="googleFormUrl">Google Form URL:</label>
+                            <input type="url" id="googleFormUrl" placeholder="Enter Google Form URL">
+                        </div>
+                        <div class="form-group">
+                            <label for="deadline">Deadline (Date and Time):</label>
+                            <input type="datetime-local" id="deadline">
+                        </div>
+                        <button type="submit" class="upload-btn">Upload Assignment</button>
+                    </form>
+                    <div id="responseMessage"></div>
+                </div>
+                <div class="update-section">
+                    <div id="assignmentList">
+                        <h2>📋 Existing Assignments</h2>
+                        <p>Manage deadlines or remove assignments:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="doctor.js"></script>
+</body>
+</html>
